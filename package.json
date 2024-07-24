@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "build-storybook -o storybook-static"
+    "build-storybook": "build-storybook -o storybook-static",
+    "build-all": "npm run build && npm run build-storybook"
   },
   "dependencies": {
     "next": "14.2.5",
