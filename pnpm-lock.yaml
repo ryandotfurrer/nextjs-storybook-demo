@@ -33,6 +33,12 @@ importers:
       '@storybook/addon-onboarding':
         specifier: ^8.2.5
         version: 8.2.5(react@18.3.1)(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
+      '@storybook/addon-styling-webpack':
+        specifier: ^1.0.0
+        version: 1.0.0(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(webpack@5.93.0(esbuild@0.21.5))
+      '@storybook/addon-themes':
+        specifier: ^8.2.5
+        version: 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
       '@storybook/blocks':
         specifier: ^8.2.5
         version: 8.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
@@ -66,6 +72,12 @@ importers:
       postcss:
         specifier: ^8
         version: 8.4.39
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.5
+        version: 0.6.5(prettier@3.3.3)
       storybook:
         specifier: ^8.2.5
         version: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
@@ -1252,6 +1264,16 @@ packages:
     peerDependencies:
       storybook: ^8.2.5
 
+  '@storybook/addon-styling-webpack@1.0.0':
+    resolution: {integrity: sha512-jo1kzn7pi+NA+LZxrWoRvW6w7dXIKY/BjTG80XX2uU92lIKT+X1k/9vYk/0KPVK3Bsf4tO6ToAuqIRyOk7MHtg==}
+    peerDependencies:
+      webpack: ^5.0.0
+
+  '@storybook/addon-themes@8.2.5':
+    resolution: {integrity: sha512-x+nMsSGwRPOmQ7fMIHlBXiV7wdR+8NE2ngjFyqNcgyyKKAKzKoWBYJZWyiaCvSDNlccXnv+RYw7cg+kwgIwe+Q==}
+    peerDependencies:
+      storybook: ^8.2.5
+
   '@storybook/addon-toolbars@8.2.5':
     resolution: {integrity: sha512-XqjJxpXjTKurL81QF+Xa69J/8TSstXvLWVqeX+132C0//Yq3VeUir87hvI2qw/qbQT9sGeRX72vqKhoxS+kvIQ==}
     peerDependencies:
@@ -1345,6 +1367,11 @@ packages:
         optional: true
       webpack:
         optional: true
+
+  '@storybook/node-logger@8.2.5':
+    resolution: {integrity: sha512-m0NhEDLgcMTsnByhPgAzUQPMkErk8YntAcDsV2BO4yPh7UsjyymRhJv7L5JQKtB8D1dvhBv+9/R06AFBuBuZLA==}
+    peerDependencies:
+      storybook: ^8.2.5
 
   '@storybook/preset-react-webpack@8.2.5':
     resolution: {integrity: sha512-kKN+wXv9IdxtAmWLsCS621pHpCs4i+NIWJ7SZW5VfurQrkFme7+FxeXvph/ZKTi2Z2adU1b46Y/svPHBgMup2A==}
@@ -3890,6 +3917,58 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  prettier-plugin-tailwindcss@0.6.5:
+    resolution: {integrity: sha512-axfeOArc/RiGHjOIy9HytehlC0ZLeMaqY09mm8YCkMzznKiDkwFzOpBvtuhuv3xG5qB73+Mj7OCe2j/L1ryfuQ==}
+    engines: {node: '>=14.21.3'}
+    peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-pug': '*'
+      '@shopify/prettier-plugin-liquid': '*'
+      '@trivago/prettier-plugin-sort-imports': '*'
+      '@zackad/prettier-plugin-twig-melody': '*'
+      prettier: ^3.0
+      prettier-plugin-astro: '*'
+      prettier-plugin-css-order: '*'
+      prettier-plugin-import-sort: '*'
+      prettier-plugin-jsdoc: '*'
+      prettier-plugin-marko: '*'
+      prettier-plugin-organize-attributes: '*'
+      prettier-plugin-organize-imports: '*'
+      prettier-plugin-sort-imports: '*'
+      prettier-plugin-style-order: '*'
+      prettier-plugin-svelte: '*'
+    peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
+      '@prettier/plugin-pug':
+        optional: true
+      '@shopify/prettier-plugin-liquid':
+        optional: true
+      '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      '@zackad/prettier-plugin-twig-melody':
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-marko:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-sort-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+
   prettier@3.3.3:
     resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
@@ -6113,6 +6192,18 @@ snapshots:
       storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
       ts-dedent: 2.2.0
 
+  '@storybook/addon-styling-webpack@1.0.0(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(webpack@5.93.0(esbuild@0.21.5))':
+    dependencies:
+      '@storybook/node-logger': 8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
+      webpack: 5.93.0(esbuild@0.21.5)
+    transitivePeerDependencies:
+      - storybook
+
+  '@storybook/addon-themes@8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))':
+    dependencies:
+      storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
+      ts-dedent: 2.2.0
+
   '@storybook/addon-toolbars@8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))':
     dependencies:
       storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
@@ -6334,6 +6425,10 @@ snapshots:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+
+  '@storybook/node-logger@8.2.5(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))':
+    dependencies:
+      storybook: 8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9))
 
   '@storybook/preset-react-webpack@8.2.5(esbuild@0.21.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.5(@babel/preset-env@7.24.8(@babel/core@7.24.9)))(typescript@5.5.4)':
     dependencies:
@@ -9324,6 +9419,10 @@ snapshots:
       source-map-js: 1.2.0
 
   prelude-ls@1.2.1: {}
+
+  prettier-plugin-tailwindcss@0.6.5(prettier@3.3.3):
+    dependencies:
+      prettier: 3.3.3
 
   prettier@3.3.3: {}
 
